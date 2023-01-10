@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1320">
+    <title>SSDAM</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/jquery-latest.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery-3.6.2.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+</head>
+<body>
+<!--header_S-->
+    <div id="header_wrap">
+        <div id="header">
+            <h1 class="logo">
+                <a href="http://127.0.0.1:5500/index.html"><img src="images/monitor/1_top/logo.png" alt=""></a>
+            </h1>
+            <div class="util">
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+                    <li><a href="javascript:return false;">Login</a></li>
+                    <li><a href="javascript:return false;">Join</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div id="gnb_wrap">
+            <div class="gnb">
+                <ul>
+                    <li><a href="javascript:return false;">About</a></li>
+                    <li><a href="javascript:return false;">교육과정 / 신청</a></li>
+                    <li><a href="javascript:return false;">커뮤니티</a></li>
+                    <li><a href="javascript:return false;">내 강의실</a></li>
+                    <li><a href="javascript:return false;">고객센터</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!--header_E-->
+<!--banner_S-->
+<!-- Demo styles -->
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .swiper {
+        margin: 0 auto;
+        height: 800px;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .banner1 {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .banner2 {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;        
+    }
+
+    .swiper {
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+</head>
+<body> 
+<!-- Swiper -->
+<div class="swiper_wrap">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide banner1">
+                <video src="media/main1.mov" muted autoplay loop>
+                    <b>
+                        your browser does not support the video tag.
+                    </b>
+                </video>
+            </div>
+            <div class="swiper-slide banner2">
+                <div class="swiper-slide banner1">
+                    <video src="media/main2.mov" muted autoplay loop>
+                        <b>
+                            본 웹브라우저에는 동영상 태그를 지원 하지 않습니다.
+                        </b>
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="banner_text">
+        <b>
+            사람은 모두 다르다, 반려견 또한 모두 다르다. <br>
+            Case by Case <br>
+            전문 맞춤식 교육
+        </b>
+    </div>
+</div>
+<!--aside_S-->
+<div class="top fixed">
+    <a href="#header_wrap"></a>
+</div>
+<div id="aside_wrap">
+    <div class="aside">
+        <a href="javascript:return false;" class="opacity">
+            <div class="aside_box1">
+                <img src="images/monitor/7_fix/icon1.png" alt="">
+                <p>교육 안내</p>
+            </div>
+        </a>
+        <a href="javascript:return false;" class="opacity">
+            <div class="aside_box2">
+                <img src="images/monitor/7_fix/icon2.png" alt="">
+                <p>교육 문의</p>
+            </div>
+        </a>
+        <a href="javascript:return false;" class="opacity">
+            <div class="aside_box3">
+                <img src="images/monitor/7_fix/icon3.png" alt="">
+                <p>교육 후기</p>
+            </div>
+        </a>
+        <a href="#header_wrap" class="top">
+            <div class="aside_box4">
+                <p>▲ TOP</p>
+            </div>
+        </a>
+    </div>
+</div>
+<!--aside_E-->
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        autoplay: {//자동재생
+            delay: 17000,//슬라이드 넘어가는 시간
+            disableOnInteraction: false,
+        },
+        loop: true,//반복
+        speed: 2000,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+        }
+    });
+</script>
+</body>
+<!--banner_E-->
+<!--contants_S-->
+<div id="container">
+    <!--section1_S-->
+    <div class="section1">
+        <div class="section1_bg"></div>
+        <div class="main_title section1_txt">
+            <h2>교육 안내</h2>
+            <p>INFORMATION</p>
+        </div>
+
+        <!--left_S-->
+        <div class="left_aticle">
+            <a href="javascript:return false;">
+                <div class="classA video_class">
+                    <div class="icon_A video_icon">
+                        <img src="images/monitor/2_information/icon1_hover.png" alt="">
+                    </div>
+                    <div class="text_A">
+                        <p class="title">영상 교육</p>
+                        <p>
+                            시간이나 장소 제한 없이 <br>
+                            손쉽게 배우는 반려견 교육
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="javascript:return false;">
+                <div class="classA group_class">
+                    <div class="icon_A gorup_icon">
+                        <img src="images/monitor/2_information/icon2_hover.png" alt="">
+                    </div>
+                    <div class="text_A">
+                        <p class="title">그룹 교육</p>
+                        <p>
+                            다른 반려견과 함께하는 <br>
+                            다양한 주제의 교육
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!--left_E-->
+        <!--right_S-->
+        <div class="right_aticle">
+            <a href="javascript:return false;">
+                <div class="classB coaching_class">
+                    <div class="icon_B coaching_icon">
+                        <img src="images/monitor/2_information/icon3_hover.png" alt="">
+                    </div>
+                    <div class="text_B">
+                        <p class="title">개인 교육</p>
+                        <p>
+                            보호자와 함께 배우는 <br>
+                            1:1 집중 교육
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="javascript:return false;">
+                <div class="classB home_class">
+                    <div class="icon_B home_icon">
+                        <img src="images/monitor/2_information/icon4_hover.png " alt="">
+                    </div>
+                    <div class="text_B">
+                        <p class="title">방문 교육</p>
+                        <p>
+                            보호자님도 함께 배우는 <br>
+                            가정 방문 교육
+                        </p>
+                    </div>
+
+                </div>
+            </a>
+        </div>
+        <!--right_E-->
+    </div>
+    <!--section1_E-->
+    <!--section2_S-->
+    <div id="section2_wrap">
+        <div class="section2">
+            <!--left_S-->
+            <div class="section2_left">
+                <div class="consulting_slogan">
+                    <p>
+                        어떤 <span>교육</span>을 <br>
+                        들어야 할지 고민이세요?
+                    </p>
+                </div>
+                <div class="time">
+                    <ul>
+                        <li><img src="images/monitor/3_counsel/call.png" alt=""></li>
+                        <li>
+                            <p>고객센터</p>
+                            <p>051-123-4567</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="call">
+                    <ul>
+                        <li><img src="images/monitor/3_counsel/time.png" alt=""></li>
+                        <li>
+                            <p>업무시간</p>
+                            <p>09:00 ~ 18:00</p>
+                            <p>휴게시간 12:00 ~ 13:00 I 토,일 공휴일 휴무</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--left_E-->
+            <!--right_S-->
+            <div class="section2_right">
+                <div class="main_title">
+                    <h2 class="consulting">
+                        상담신청하기
+                    </h2>
+                </div>
+                <div class="consulting_form">
+                    <form action="">
+                        <input type="text" style="width: 600px;" placeholder="이름">
+                    </form>
+                    <form action="">
+                        <select name="" id="">
+                            <option value="">010</option>
+                            <option value="">016</option>
+                            <option value="">019</option>
+                            <option value="">017</option>
+                        </select>
+                        <b> ㅡ </b>
+                        <input type="text">
+                        <b> ㅡ </b>
+                        <input type="text">
+                    </form>
+                    <textarea name="" id="">
+쓰담교육 프로그램을 위한 상담입니다.
+효과적인 교육 추천을 위해 아래 사항을 자세하게 작성해주세요.
+        
+관심프로그램(ex: 영상교육/그룹교육/개인교육 등):
+캠퍼스로 방문상담 희망 시 가능한 시간 (ex. 주중/주말 오후 2시) :
+반려견이름:
+나이:
+견종:
+중성화 여부:
+문제행동 :
+                    </textarea>
+                </div>
+            </div>
+            <div class="btu section2_btu">
+                <a href="javascript:return false;"><b>상담신청</b></a>
+            </div>
+            <!--right_E-->
+        </div>
+    </div>
+    <!--section2_E-->
+    <!--section3_S-->
+    <div id="setction3_wrap">
+        <div class="section3">
+            <div class="main_title">
+                <h2>교육후기</h2>
+                <p>쓰담교육을 이용한 보호자님들의 솔직 후기!</p>
+            </div>
+        </div>
+        <div class="sesction3_aticle">
+            <a href="javascript:return false;">
+                <div class="box margin_r">
+                    <img src="images/monitor/4_review/review_icon.png" alt="">
+                    <strong>쓰담 교육을 받은 뒤 반려견도 저도 행복해 졌어요</strong>
+                    <p>말티즈 ㅣ13세 남</p>
+                </div>
+            </a>
+            <a href="javascript:return false;">
+            <div class="box box2">
+                <img src="images/monitor/4_review/review_icon.png" alt="">
+                <strong>퍼피교육은 쓰담에서!</strong>
+                <p>퍼그 ㅣ5개월 여</p>
+            </div>
+            </a>
+            <a href="javascript:return false;">
+                <div class="box margin_r">
+                    <img src="images/monitor/4_review/bongdal.png" alt="">
+                    <strong>입질이 심해 산책도 못했던 봉달이는 이젠 매일 산책 중!</strong>
+                    <p>봉달 ㅣ14세 남 </p>
+                </div>
+            </a>
+            <a href="javascript:return false;">
+                <div class="box box4">
+                    <img src="images/monitor/4_review/ddalki.png" alt="">
+                    <strong>허겁지겁 밥 먹던 딸기, 쓰담 교육 후...</strong>
+                    <p>페키니즈 ㅣ8세 남 </p>
+                </div>
+            </a>
+        </div>
+        <div class="section3_btu btu">
+            <a href="javascript:return false;"><b>더 보기</b></a>
+        </div>
+    </div>
+    <!--section3_E-->
+    <!--section4_S-->
+    <div id="section4_wrap">
+        <div class="section4">
+            <div class="footer_banner_txt">
+                " 다양한 채널을 통해 쓰담의 더 많은 소식을 볼 수 있습니다 "
+            </div>
+            <div class="footer_banner_sns">
+                <ul>
+                    <li><a href="javascript:return false;"><img src="images/monitor/5_footer_banner/insta_icon.png" alt=""></a></li>
+                    <li><a href="javascript:return false;"><img src="images/monitor/5_footer_banner/facebook_icon.png" alt=""></a></li>
+                    <li><a href="javascript:return false;"><img src="images/monitor/5_footer_banner/youtube_icon.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--section4_E-->
+<!--contants_E-->
+<!--footer_S-->
+<div id="footer_wrap">
+    <div class="footer">
+        <div class="footer_txt">
+            <p>
+                대표 : ooo I 주소 : 부산시 금정구 새싹로14번지 2 <br>
+                TEL : 051 123 4567 사업자 등록 번호 : 12345-67891-234 
+                <br>
+                이용약관 I 개인정보취급방침
+            </p>
+        </div>
+        <div class="footer_logo">
+            <a href="javascript:return false;"><img src="images/monitor/6_footer/footer_icon.png" alt=""></a>
+        </div>
+        <div class="footer_copyrigth">
+            <p>COPYRIGHT(C) 2023 쓰담 All right reserved.</p>
+        </div>
+    </div>
+</div>
+<!--footer_S-->
+
+</body>
+</html>
